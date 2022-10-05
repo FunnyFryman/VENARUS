@@ -1568,12 +1568,7 @@ table {
   position: absolute;
   top: 0;
   width: 100%;
-  left: 704px;
+  left: 170px;
   height: 100vh;
   z-index: 20;
-}
-
-.main-button:hover:before {
-  content: "";
-  background-color: red;
 }/*# sourceMappingURL=style.css.map */
