@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css">
     <script src="https://kit.fontawesome.com/d50d610183.js" crossorigin="anonymous"></script>
     <title>Единицы измерения</title>
@@ -59,9 +61,6 @@
                 <img class="main-section__logo-second" src="src/img/кнопка 2.png" alt="">
                 <img class="main-section__logo-thrid" src="src/img/кнопка А.png" alt="">
             </div>
-            <div class="main-section__gradient">
-                <img class="main-section__gradient-one" src="src/svg/Градиент 1.svg" alt="">
-            </div>
             <div class="main-section__text">
                 <ul class="main-section__list">
                     <li class="main-section__list-item-one"><a href="#about-me">Схема приёма</a> </li>
@@ -76,11 +75,18 @@
                     <p class="main-section__button-text">Где купить ></p>
                 </div>
             </div>
+            <div class="main-section__containerz containerz">
+                <div class="wave">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Вторая секция -->
     <section class="second-section">
-        <div class="case second-section__main-container">
+        <div class="container second-section__main-container">
             <div class="second-section__line">
                 <div class="second-section__line-one"></div>
                 <marquee height="94" class="second-section__discount">получить скидку 10% >>> получить скидку 10% >>>
@@ -95,7 +101,9 @@
                 <img class="second-section__square-second" src="src/img/Квадрат 2.svg" alt="">
                 <img class="second-section__numbers" src="src/img/Цифры.png" alt="">
                 <p class="second-section__numbers-text">Удобный прием. <br> Одна таблетка в сутки*</p>
-                <img class="second-section__info" src="src/img/информация.png" alt="">
+                <div class="second-section__info" data-title="Информация">
+                    <img class="second-section__info-one" src="src/img/информация.png" alt="">
+                </div>
             </div>
             <h3 class="second-section__title">Комплексное <br> действие</h3>
             <p class="second-section__description">Венарус показан для терапии <br> симптомов хронических <br>
@@ -127,6 +135,7 @@
                 <h4 class="second-section__circles-fourth-text">Помогает <br> уменьшить отеки</h4>
                 <a class="second-section__link-fourth" href="">Подробнее ></a>
                 <img class="second-section__circles-fifth" src="src/img/Круг 1.png" alt="">
+
                 <img class="second-section__left-arrow" src="src/img/стрелочка влево.png" alt="">
                 <img class="second-section__right-arrow" src="src/img/стрелочка вправо.png" alt="">
                 <h4 class="second-section__circles-fifth-text">Оказывает <br> ангиопротекторное <br> и венотонизурующее
@@ -138,27 +147,98 @@
     </section>
     <!-- Третья секция -->
     <section class="thrid-section">
-        <div class="box thrid-section__content">
+        <div class="container thrid-section__content">
             <h5 class="thrid-section__opinion">О производстве <br> Венарус</h5>
             <img class="thrid-section__gradient" src="src/svg/Градиент.svg" alt="">
-            <a href=""><img class="thrid-section__left-arrow" src="src/svg/стрелка влево.svg" alt=""></a>
-            <a href=""><img class="thrid-section__right-arrow" src="src/svg/стрелка вправо.svg" alt=""></a>
-            <img class="thrid-section__zavod-one" src="src/img/links_zavod_1.png" alt="">
-            <img class="thrid-section__zavod-second" src="src/img/links_zavod_2.png" alt="">
+
+            <div class="thrid-section__nav">
+                <div id="carouselExampleControls" data-bs-interval="10000000" class="carousel slide"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="src/img/links_zavod_1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/img/links_zavod_2.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <img src="src/svg/стрелка влево.svg" alt="">
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <img src="src/svg/стрелка вправо.svg" alt="">
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <img class="thrid-section__zavod-one" src="src/img/links_zavod_1.png" alt="">
+            <img class="thrid-section__zavod-second" src="src/img/links_zavod_2.png" alt=""> -->
             <div class="thrid-section__button"><a href=""><img src="src/svg/кнопка.svg" alt=""></a></div>
             <div class="thrid-section__play"><a href=""><img src="src/svg/Проигрыватель.svg" alt=""></a></div>
             <h6 class="thrid-section__title">Мнение <br> специалистов</h6>
             <p class="thrid-section__text">Фармакотерапия — <br> неотъемлемый компонент <br> современного лечения <br>
                 хронического заболевания вен.</p>
-            <img class="thrid-section__employee" src="src/img/Работник.png" alt="">
-            <a href=""><img class="thrid-section__button-second" src="src/svg/кнопочка первая.svg" alt=""></a>
-            <a href=""><img class="thrid-section__button-thrid" src="src/svg/кнопка 2.svg" alt=""></a>
-            <a href=""><img class="thrid-section__button-fourth" src="src/svg/кнопка 3.svg" alt=""></a>
-            <a href=""><img class="thrid-section__button-play" src="src/svg/Проигрыватель.svg" alt=""></a>
+            <!-- <img class="thrid-section__employee" src="src/img/Работник.png" alt=""> -->
+
+            <div class="thrid-section__navi">
+                <div id="carouselExampleControlss" data-bs-interval="3000" class="carousel slide"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item second-carousel-item active">
+                            <img src="src/img/Работник.png" class="d-block w-100" alt="#">
+                        </div>
+                        <div class="carousel-item second-carousel-item">
+                            <img src="src/img/foto-1-doktor-pixabay.png" class="d-block w-100" alt="#">
+                        </div>
+                        <div class="carousel-item second-carousel-item">
+                            <img src="src/img/vrach-medsestra-belyj-halat.jpg" class="d-block w-100" alt="#">
+                          </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev carousel-second-button-one" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <img src="src/svg/кнопочка первая.svg" alt="">
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next carousel-second-button-second" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <img src="src/svg/кнопка 2.svg" alt="">
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+                <button class="carousel-control-next carousel-second-button-fourth" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <img src="src/svg/кнопка 3.svg" alt="">
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+            <!-- <a href=""><img class="thrid-section__button-second" src="src/svg/кнопочка первая.svg" alt=""></a>
+            <a href=""><img class="thrid-section__button-thrid" src="src/svg/кнопка 2.svg" alt=""></a> -->
+            <!-- <a href=""><img class="thrid-section__button-fourth" src="src/svg/кнопка 3.svg" alt=""></a> -->
+            <a href=""><img class="thrid-section__button-play" src="src/svg/Проигрыватель.svg" alt="#"></a>
         </div>
     </section>
     <section class="fourth-section">
-        <div class="cake fourth-section__content">
+        <div class="container fourth-section__content">
             <img class="fourth-section__gradient-second" src="src/svg/Градиент 2.svg" alt="">
             <h6 class="fourth-section__title">Полезная <br> информация</h6>
             <p class="fourth-section__text">ВЕНАРУС — надежный помощник <br> в лечении варикоза, хранитель <br> женских
@@ -180,12 +260,16 @@
             <div class="fourth-section__buttons">
                 <p class="fourth-section__buttons-text-one">apteka.ru</p>
             </div>
-            <a href=""><img class="fourth-section__three-hundred-sixty-six" src="src/svg/366.svg" alt=""></a>
-            <a href=""><img class="fourth-section__stolichki" src="src/svg/stolichki.svg" alt=""></a>
+            <div class="fourth-section__buttons-second">
+                <p class="fourth-section__buttons-text-second">366.ru</p>
+            </div>
+            <div class="fourth-section__buttons-thrid">
+                <p class="fourth-section__buttons-text-thrid">stolichki.ru</p>
+            </div>
         </div>
     </section>
     <footer class="footer">
-        <div class="box footer__container">
+        <div class="container footer__container">
             <img class="footer__rectangle-one" src="src/svg/Rectangle 14.svg" alt="">
             <h6 class="footer__title">БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА. НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ</h6>
             <p class="footer__text-one">Сообщить о нежелательном явлении</p>
@@ -201,6 +285,9 @@
         </div>
     </footer>
     <script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/6b6b11c6e9.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script> -->
